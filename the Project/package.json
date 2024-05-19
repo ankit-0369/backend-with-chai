@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/ankit-0369/backend-with-chai/issues"
   },
-  "homepage": "https://github.com/ankit-0369/backend-with-chai#readme"
+  "homepage": "https://github.com/ankit-0369/backend-with-chai#readme",
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
 }
