@@ -1,5 +1,5 @@
 {
-  "name": "scrollmore",
+  "name": "chalchitra",
   "version": "1.0.0",
   "description": "A backend fun project with NodeJs and lots of coffee & Chai :)",
   "main": "index.js",
@@ -30,6 +30,9 @@
     "prettier": "^3.2.5"
   },
   "dependencies": {
-    "dotenv": "^16.4.5"
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
   }
 }
