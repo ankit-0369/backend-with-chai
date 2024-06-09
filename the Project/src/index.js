@@ -4,29 +4,11 @@ import 'dotenv/config'
 import express from "express";
 import { DB_NAME } from "./constant.js";
 import connectionDB from './db/index.js';
-import cors from 'cors'
-import cookieParser from 'cookie-parser';
+import { app } from './app.js';
 
 
 
-const app= express()
 const port= process.env.PORT || 8000;
-
-app.use(cors(
-    {
-        origin: process.env.CORS_ORIGIN,
-        Credential: true
-    }
-))
-
-app.use(express.json({limit: '16kb'}))
-app.use(express.urlencoded({limit: '16kb'}))
-app.use(express.static("public"))
-app.use(cookieParser())
-
-app.get('/', (req, res) => {
-    res.send('Hi again from the project');
-})
 
 
 
@@ -43,6 +25,8 @@ connectionDB()
 .catch((err) => {
     console.log("DB connection error :: ", err)
 })
+
+
 
 
 
